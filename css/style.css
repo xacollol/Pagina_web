@@ -1,0 +1,30 @@
+body
+	{
+		margin: 0;
+		min-height: 100vh;
+		background-image: url(../img/educacion_exterior_unad_0.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+    }
+
+body:before
+    {
+    	content: "";
+    	width: 100%;
+    	min-height: 100vh;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+
+    	background: linear-gradient( #135c87,#a6578d);
+
+    	opacity: 0.5;
+    	z-index: -5;
+    }
+
+nav
+	{
+    	color: black;
+	}
