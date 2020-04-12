@@ -1,0 +1,83 @@
+#cuerpode_la_pagina
+	{
+		margin: 0;
+		min-height: 100vh;
+		background-image: url(../img/logo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+        opacity: 0.5;
+    }
+
+#cuerpode_la_pagina:before
+    {
+    	content: "";
+    	width: 100%;
+    	min-height: 100vh;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+
+    	background: linear-gradient(90deg, #135c87,#a6578d);
+
+    	opacity: 0.5;
+    	z-index: -5;
+    }
+
+body
+    {
+        margin: 0;
+        min-height: 100vh;
+        background-image: url(../img/logo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+body:before
+    {
+        content: "";
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: linear-gradient(90deg, #135c87,#a6578d);
+
+        opacity: 0.5;
+        z-index: -5;
+    }
+#navegador_primero
+	{
+    	background: linear-gradient(90deg, #88386e,#88386e);
+	}
+
+#responsive-banner 
+    {
+        margin: 0;
+        max-width : 100%;
+        height: 15vh;
+        top: 0;
+        background: linear-gradient(90deg, #401615,#084060);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+#principal_bar
+    {
+        background-color: #43afd5!important;
+        right:1;
+    }
+
+ul.menu li a 
+    {
+      border-left: 1px solid #FFF;
+      border-right: 1px solid #7C7C7C;
+    }

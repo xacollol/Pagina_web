@@ -1,30 +1,402 @@
-body
-	{
-		margin: 0;
-		min-height: 100vh;
-		background-image: url(../img/educacion_exterior_unad_0.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
+/*************************************************************************************************************************************************/
+                                                /*Cuerpo de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #D4D4D4;
+    font-family: 'Open sans';
+}
+
+.contenedor-principal{
+    width: 800px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+/*************************************************************************************************************************************************/
+                                                /*imagen del encabezado*/
+
+.content-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*************************************************************************************************************************************************/
+                                                /*navegacion tab*/
+.wrap{
+    width: 800px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+ul.tabs{
+    width: 100%;
+    background: #363636;
+    list-style: none;
+    display: flex;
+}
+
+ul.tabs li{
+    width: 18%;
+}
+
+ul.tabs li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+
+    display: block;
+    padding: 20px 0px;
+}
+
+.active{
+    background: #0984CC;
+}
+
+ul.tabs li a .tab-text{
+    margin-left: 8px;
+}
+
+.secciones{
+    width: 100%;
+    background: #da8080;
+}
+
+.secciones article{
+    padding: 30px;
+}
+
+.secciones article p{
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 700px){
+    ul.tabs li{
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 450px){
+    ul.tabs li a{
+        padding: 15px 0px;
     }
 
-body:before
-    {
-    	content: "";
-    	width: 100%;
-    	min-height: 100vh;
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-
-    	background: linear-gradient( #135c87,#a6578d);
-
-    	opacity: 0.5;
-    	z-index: -5;
+    ul.tabs li a .tab-text{
+        display: none;
     }
 
-nav
-	{
-    	color: black;
-	}
+    .secciones article{
+        padding: 20px;
+    }
+}
+
+
+/*************************************************************************************************************************************************/
+                                                /*pagina de inicio*/
+
+ hr{
+    max-width: 1000px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    background: linear-gradient(90deg, yellow,blue,red);
+}
+
+main{
+    max-width: 1000px;
+    background: white;
+    padding: 10px;
+    margin:auto;
+
+}
+
+.content1{
+    width: 229px;
+    height: 98%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+
+.content1-articulos{
+    width: 205px;
+    height: 50%;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 66px;
+
+}
+
+.cotenedor-articulostodos{
+    width: 99%;
+    height: 400%;
+    margin: 5px;
+
+}
+
+.articulo1{
+    width: 90%;
+    height: 30vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left:10px;
+    display: block;
+}
+
+.articulo1 h2{
+    color: black;
+    font-size: 16px;
+    position: flex;
+}
+.articulo1 p{
+    font-size: 14px;
+    color: black;
+    border-bottom-style: dashed double none;
+    z-index: -5;
+
+}
+.articulo2{
+    width: 90%;
+    height: 30vh;
+    margin-top: 10px;
+    border-color: black;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left:10px;
+    float: bottom;
+    display: block;
+}
+
+.articulo2 img{
+    width: 500px;
+    height: 143px;
+    z-index: -5;
+}
+
+#myCarousel{
+    width: 495px;
+    height: 100%;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-style: dashed groove none dotted;
+}
+
+#myCarousel img{
+    width: 500px;
+    height: 100%;
+}
+
+
+.aside{
+    height: 400px;
+    margin-top: 9px;
+    margin-right: 9px;
+    z-index: 108;
+}
+
+
+.footer{
+    max-width: 1000px;
+    height: 80px;
+    background: #000;
+    clear: both;
+    margin: auto;
+    margin-top: 10px;
+    background: black;
+
+}
+
+
+@media screen and ( min-width: 800px){
+
+    .content1 {
+        width: 98%;
+        height: 98%;
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+
+    .content1-articulos{
+        width: 205px;
+        height: 50%;
+        margin: auto;
+        margin-left: 10px;
+        margin-top: 0px;
+
+    }
+
+    .cotenedor-articulostodos{
+        width: 80%;
+        margin-top: 10px;
+        float: left;
+    }
+
+    .content1-publicidad{
+        width: 146px;
+        float: right;
+        margin-top: 10px;
+        margin-left: -31px;
+        margin-right: 10px;
+        height: 635px;
+        z-index:auto;
+    }
+    .content1-articulos{
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .articulo2{
+        width: 50%;
+        height: 60vh;
+
+    }
+    .articulo1{
+        width: 50%;
+        height: 60vh;
+
+    }
+    .carrucel{
+        width: 89%;
+        height: 155px;
+    }
+
+    footer{
+        background: linear-gradient(90deg, #dd7124,#d2a229);
+    }
+}
+
+/*************************************************************************************************************************************************/
+                                                /*pagina de actividades*/
+
+.actidiad{
+    width: 100%;
+}
+
+#tab4 p{
+    text-align: center;
+    margin: 5px;
+    width: 638px;
+}
+
+
+#cruci{
+    width:672px;
+    height: 697px;
+}
+
+#sopa{
+    width:672px;
+    height: 697px;
+}
+
+iframe{
+    width: 672px;
+    height: 697px;
+}
+
+#menu-actividad{
+    width:672px;
+}
+
+
+
+/*************************************************************************************************************************************************/
+                                                /*pagina de lecturas*/
+
+.container-tab3{
+    width: 100%;
+}
+#menu-actividad{
+    width: 672px;
+    font-size: 12px;
+    font-family: 'Open sans';
+    font-weight: 200;
+}
+
+#lectura1{
+    width: 10px;
+}
+.contenedor-lect1 img{
+    width: 42%;
+    height: 45vh;
+}
+
+.asidelect1{
+    width: 42%;
+    height: 45vh;
+    margin-top: 5px;
+}
+
+#lect1{
+    width: 681px;
+    margin: 0;
+    text-align: center;
+}
+
+/***Lectura 2**/
+
+#lect2{
+    width: 55%;
+    margin: 0;
+    margin-left: 23%;
+}
+.asidelect1{
+    width: 42%;
+    height: 45vh;
+    margin-top: 5px;
+}
+#lect1{
+    width: 681px;
+    margin: 0;
+    text-align: center;
+}
+
+
+/***Lectura 3**/
+#lect3{
+    width: 55%;
+    margin: 0;
+    margin-left: 23%;
+}
+
+#lect5{
+    width: 55%;
+    margin: 0;
+    margin-left: 23%;
+}
+}
+
+.video-lect4{
+    display: flex;
+    width: 85%;
+    margin: 0;
+}
+
+#video1{
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#video2{
+    width: 50%;
+    margin-top: 10px;
+}
