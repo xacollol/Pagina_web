@@ -1,0 +1,56 @@
+body
+{background-color: white;
+}
+nav, header, .contenedor, footer{
+	max-width: 92%;
+	margin: auto;}
+
+nav{
+	background-color: white;
+	text-align: center;}
+ header
+		 {color: white;	
+		 background-color: teal;}
+
+ .contenedor
+		 {	background-color: teal;}
+.central
+		 {	background-color: teal;
+		 display: inline-block;
+		 color: violet;
+		 max-width: 65%;}
+
+
+
+footer
+		 {	
+		 text-align: center;
+		 background-color: silver;}
+aside
+		 {	background-color: white;
+		 display: inline-block;
+		 max-width: 27%;}
+
+.menu li{color: violet;
+background-color: silver;
+display: block;}
+
+li a, boton{
+	display: inline-block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.9em 1em;}
+
+.listaDesplegable{
+display: none;
+background-color: gray;
+}
+.listaDesplegable a{
+text-bold: true;
+color: white;
+display: block;
+text-align: left;}
+.boton:hover .listaDesplegable{
+	display: block;}
+li a:hover{background-color: navy;}
